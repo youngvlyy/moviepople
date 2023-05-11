@@ -8,6 +8,7 @@
 import { Fruite } from "./components/fruites";
 import { Component } from "./core/heropy";
 
+
 export class App extends Component {
 	constructor(){
 		super({
