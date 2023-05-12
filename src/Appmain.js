@@ -1,5 +1,5 @@
 import {App2} from './App2.js'
-import router from "./routes/index"
+import router from "./routes"
 
 const root2 = document.querySelector('#root2');
 root2.append(new App2().el)

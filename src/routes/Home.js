@@ -1,15 +1,9 @@
 import { Component } from "../core/heropy";
 
-export class Home extends Component {
-	constructor(){
-		super(
-			{
-			}
-		)
-	}
+export default class Home extends Component {
 	render(){
-		this.el.textContent = `
-			home page
+		this.el.innerHTML = `
+			<h1>home page</h1>
 		`
 	}
 }

@@ -5,10 +5,8 @@
 // 	}
 // }
 
-import { Component, creatRouter} from "./core/heropy";
+import { Component } from "./core/heropy";
 import { TheHeader } from "./components/TheHeader";
-import routes from "./routes";
-// import { creatRouter } from "./routes/index";
 
 
 export class App2 extends Component {
@@ -19,7 +17,8 @@ export class App2 extends Component {
 	render() {
 		const routeView = document.createElement('router-View');
 		this.el.append(new TheHeader().el, routeView) ;
-		routeView.append(new creatRouter())
+		// routeView.append(new creatRouter(router))
+		console.log(location.href)
 
 	}//화면에 보여지는 것
 }
