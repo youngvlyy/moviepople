@@ -11,6 +11,7 @@ import { Component } from "../core/heropy";
 export class TheHeader extends Component {
 	constructor(){
 		super({
+			tagName : 'header'
 		})
 	}
 	render() {

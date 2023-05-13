@@ -20,6 +20,7 @@ function routeRender(routes){
 	//https://localhost:1234/#/home?name=heropy
 	const [hash, queryString = ''] = location.hash.split('?');
 	const currentRoute = routes.find(route => new RegExp(`${route.path}/?$`).test(hash))//hash 주소끝에 /가 붙을 수도 있고 안붙을 수도 있음
+	console.log(currentRoute)
 	routeView.innerHTML = ''
 	routeView.append(new currentRoute.component().el)
 
